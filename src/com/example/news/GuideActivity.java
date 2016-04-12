@@ -22,7 +22,7 @@ public class GuideActivity extends Activity {
 	private View view_red_point;
 	private Button bt_start;
 	
-	private MyPagerAdapter adapter;
+	private GuidePagerAdapter adapter;
 	
 	private int width;//两个小圆点间的距离
 
@@ -56,7 +56,7 @@ public class GuideActivity extends Activity {
 			}
 			ll_point_group.addView(v,params);
 		}
-		adapter=new MyPagerAdapter();
+		adapter=new GuidePagerAdapter();
 		vp_guide.setAdapter(adapter);
 		
 		//视图树getViewTreeObserver() 
@@ -103,9 +103,9 @@ public class GuideActivity extends Activity {
 	}
 	
 	/*
-	 * MyPagerAdapter
+	 * GuidePagerAdapter
 	 */
-	class MyPagerAdapter extends PagerAdapter{
+	class GuidePagerAdapter extends PagerAdapter{
 		@Override
 		public int getCount() {
 			// TODO Auto-generated method stub

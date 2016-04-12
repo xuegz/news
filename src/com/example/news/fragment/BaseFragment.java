@@ -6,6 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+/*
+ * ContentFragment与LeftMenuFragment的基类
+ */
 public abstract class BaseFragment extends Fragment {
 	
 	// fragment创建
