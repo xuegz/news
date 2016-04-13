@@ -24,8 +24,16 @@
         android:visibility="invisible"
         android:textColor="@drawable/bt_guide_text_selector" 
         android:onClick="enterMain"/>
-
-    <RelativeLayout
+	
+    <!-- <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:padding="10dip"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+       	android:layout_marginBottom="80dp"
+        /> -->
+    
+   <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -45,5 +53,5 @@
             android:layout_height="10dp"
             android:background="@drawable/shape_point_red" />
     </RelativeLayout>
-
+ 
 </RelativeLayout>

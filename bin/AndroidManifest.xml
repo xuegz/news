@@ -32,7 +32,8 @@
         </activity>
         <activity
             android:name="com.example.news.MainActivity"
-            android:label="@string/title_activity_main" >
+            android:label="@string/title_activity_main" 
+            android:theme="@style/Theme.PageIndicatorDefaults">
         </activity>
     </application>
 

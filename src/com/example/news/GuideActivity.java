@@ -1,5 +1,6 @@
 package com.example.news;
 
+import com.viewpagerindicator.CirclePageIndicator;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -29,6 +30,7 @@ public class GuideActivity extends Activity {
 	private int[] arr=new int[]{
 		R.drawable.guide_1,R.drawable.guide_2,R.drawable.guide_3
 	};
+	private CirclePageIndicator indicator;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -42,6 +44,7 @@ public class GuideActivity extends Activity {
 		vp_guide=(ViewPager) findViewById(R.id.vp_guide);
 		ll_point_group=(LinearLayout) findViewById(R.id.ll_point_group);
 		view_red_point=findViewById(R.id.view_red_point);
+		//indicator = (CirclePageIndicator)findViewById(R.id.indicator);
 		bt_start=(Button) findViewById(R.id.bt_start);
 	}
 	
@@ -59,6 +62,8 @@ public class GuideActivity extends Activity {
 		adapter=new GuidePagerAdapter();
 		vp_guide.setAdapter(adapter);
 		
+		/* indicator.setViewPager(vp_guide);
+	     indicator.setSnap(true);*/
 		//视图树getViewTreeObserver() 
 		ll_point_group.getViewTreeObserver().addOnGlobalLayoutListener(new OnGlobalLayoutListener() {
 			@Override
@@ -67,7 +72,7 @@ public class GuideActivity extends Activity {
 				ll_point_group.getViewTreeObserver().removeGlobalOnLayoutListener(this);
 			}
 		});
-		//设置页面改变监听  setOnPageChangeListener
+	     //设置页面改变监听  setOnPageChangeListener
 		vp_guide.setOnPageChangeListener(new OnPageChangeListener() {			
 			@Override
 			public void onPageSelected(int position) {
