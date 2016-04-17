@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <color name="white">#FFFFFF</color><!--白色 -->
+    <color name="black">#000000</color><!--黑色 -->
+    <color name="darkgrey">#A9A9A9</color><!--暗灰色 -->
+    <color name="purple">#800080</color><!--紫色 -->
+</resources>

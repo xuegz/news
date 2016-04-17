@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <FrameLayout 
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView 
+            android:id="@+id/iv_refresh"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/common_listview_headview_red_arrow"/>
+        
+        <ProgressBar 
+            android:id="@+id/pb_refresh"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           	android:visibility="invisible"/>
+    </FrameLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView 
+            android:id="@+id/tv_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="18dp"
+            android:textColor="#f00"
+            android:paddingTop="5dp"
+            android:text="下拉刷新"/>
+        <TextView 
+            android:id="@+id/tv_refresh_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="14dp"
+            android:text="最后刷新时间：2016-4-14 09：20：21"/>
+    </LinearLayout>
+
+</LinearLayout>
